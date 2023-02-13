@@ -273,6 +273,15 @@ local config = {
         })
         end,
       },
+      {
+        "Pocco81/auto-save.nvim",
+	    config = function()
+            require("auto-save").setup {
+			-- your config goes here
+			-- or just leave it empty :)
+		    }
+	    end,
+      }
     },
     -- All other entries override the require("<key>").setup({...}) call for default plugins
     ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
